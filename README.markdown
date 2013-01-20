@@ -1,5 +1,5 @@
-Kal - a calendar component for the iPhone
------------------------------------------
+Kal - a calendar component for the iPhone and iPad
+--------------------------------------------------
 ![](http://farm9.staticflickr.com/8308/7898361456_debb9e2695.jpg)
 
 This project aims to provide an open-source implementation of the month view in Apple's mobile calendar app (MobileCal). When the user taps a day on the calendar, any associated data for that day will be displayed in a table view directly below the calendar. As a client of the Kal component, you have 2 responsibilities:
@@ -11,6 +11,20 @@ In order to use Kal in your application, you will need to provide an implementat
 
 Release Notes
 -------------
+
+**19 January, 2013**
+
+I've forked klazuka's code to add iPad and tall iPhone support. So far I've:
+* Converted to ARC.
+* Added the iPad target to the holiday example app.
+* Modernized the code a little for support for LLVM's latest stuff like auto-synthesization.
+
+Plans for the next few weeks are:
+* Make Kal resolution independant (embedd just the month/header view in another UIView).
+* Provide better options for customisation and support rotation.
+
+Drawbacks:
+* I'm only supporting iOS 4.3+ (currently it's iOS 5.0 only, but i'll go back to the latest iOS that Apple support.)
 
 **June 21, 2012**
 
